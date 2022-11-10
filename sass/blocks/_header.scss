@@ -9,11 +9,12 @@
 
 .nav {
   @include super-flex;
+  margin-right: auto;
+  margin-left: 48px;
 }
 
 .nav__list {
   @include super-flex;
-  margin-right: 577px;
 }
 
 .nav__item+.nav__item {
@@ -48,4 +49,34 @@
   background-color: #fff;
   color: #014E56;
   border: 2px solid #014E56;
+}
+
+.site-header__menu{
+  display: none;
+  width: 20px;
+  height: 17px;
+  background-image: url('../images/menu.svg');
+  border: none;
+  background-color: transparent;
+}
+
+@include media (768px){
+  .site-header{
+    padding: 72px 0;
+  }
+}
+
+@include media (576px){
+
+  .site-header{
+    padding: 48px 0;
+  }
+
+  .nav, .nav__btn{
+    display: none;
+  }
+
+  .site-header__menu{
+    display: block;
+  }
 }
