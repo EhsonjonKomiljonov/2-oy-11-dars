@@ -353,7 +353,6 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  background-color: #014E56;
 }
 
 main {
@@ -397,6 +396,7 @@ a {
 
 .site-header {
   padding: 77px 0;
+  background-color: #014E56;
 }
 
 .site-header__inner {
@@ -427,6 +427,11 @@ a {
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+  transition: all 0.2s ease-out;
+}
+
+.nav__link:hover {
+  opacity: 0.8;
 }
 
 .nav__btn {
