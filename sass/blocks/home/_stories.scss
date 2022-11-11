@@ -1,0 +1,155 @@
+.stories {
+  padding: 140px 0;
+  background-color: #004047;
+  background-image: url('../images/stories-bgi-1.png'), url('../images/stories-bgi-2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(50% - 700px) top, calc(50% + 700px) bottom;
+}
+
+.stories__title__box {
+  width: 100%;
+  max-width: 932px;
+  margin: 0 auto;
+}
+
+.stories__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.stories__title__style {
+  color: #79C8C7;
+}
+
+.stories__list {
+  @include super-flex;
+  margin-top: 92px;
+}
+
+.stories__item {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.stories__item::before {
+  display: block;
+  margin: 0 auto;
+  width: 67px;
+  height: 56px;
+  background-image: url('../images/stories-item-bgi.svg');
+  content: "";
+}
+
+.stories__desc {
+  position: absolute;
+  top: 36px;
+  z-index: 1;
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.succes {
+  margin-top: 104px;
+  margin-bottom: 32px;
+}
+
+.succes__title {
+  margin: 0 0 2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79C8C7;
+}
+
+.succes__text {
+  margin: 0;
+  font-family: 'Livvic', sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.succes__img {
+  display: block;
+  margin: 0 auto;
+}
+
+@include media (1550px) {
+
+  .stories {
+    background-position: top left, bottom right;
+  }
+
+}
+
+@include media (960px) {
+
+  .stories__title__box {
+    width: 100%;
+    max-width: 770px;
+  }
+
+  .stories__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .stories__item {
+    width: 100%;
+    max-width: 290px;
+  }
+}
+
+@include media (845px) {
+  .stories__title__box {
+    width: 100%;
+    max-width: 490px;
+  }
+
+  .stories__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .stories__list{
+    flex-direction: column;
+  }
+
+  .stories__item{
+    width: 100%;
+    max-width: 573px;
+  }
+
+  .stories__item + .stories__item{
+    margin-top: 48px;
+  }
+
+  .succes{
+    margin-top: 71px;
+    margin-bottom: 16px;
+  }
+}
+
+@include media (576px){
+  .succes{
+    margin-top: 96px;
+  }
+}
+
+@include media (360px){
+  .succes{
+    margin-top: 120px;
+  }
+}
