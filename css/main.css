@@ -439,7 +439,7 @@ a {
   color: #F67E7E;
 }
 
-.nav__btn {
+.site-header__btn {
   display: block;
   border: 2px solid #FFFFFF;
   border-radius: 24px;
@@ -451,7 +451,7 @@ a {
   color: #FFFFFF;
 }
 
-.nav__btn:active {
+.site-header__btn:active {
   background-color: #fff;
   color: #014E56;
   border: 2px solid #014E56;
@@ -468,14 +468,14 @@ a {
 
 @media only screen and (max-width: 768px) {
   .site-header {
-    padding: 72px 0;
+    padding: 64px 0;
   }
 }
 @media only screen and (max-width: 576px) {
   .site-header {
     padding: 48px 0;
   }
-  .nav, .nav__btn {
+  .nav, .site-header__btn {
     display: none;
   }
   .site-header__menu {
@@ -490,6 +490,12 @@ a {
   background-position: calc(50% - 910px) 20%;
 }
 
+.hero--about {
+  padding: 47px 0 120px;
+  background-image: url("../images/about-hero-bgi.svg");
+  background-position: calc(50% + 500px);
+}
+
 .hero__inner {
   display: flex;
   align-items: center;
@@ -500,9 +506,19 @@ a {
   background-position: right bottom;
 }
 
+.hero__inner--about {
+  padding-bottom: 0;
+  background-image: none;
+}
+
 .hero__title__box {
   width: 100%;
   max-width: 620px;
+}
+
+.hero__title__box--about {
+  width: 100%;
+  max-width: 350px;
 }
 
 .hero__title {
@@ -511,6 +527,10 @@ a {
   font-size: 100px;
   line-height: 100px;
   color: #FFFFFF;
+}
+
+.hero__title--about {
+  font-size: 64px;
 }
 
 .hero__title__style {
@@ -524,12 +544,21 @@ a {
   max-width: 445px;
 }
 
+.hero__text__box--about {
+  width: 100%;
+  max-width: 730px;
+}
+
 .hero__line {
   width: 100%;
   max-width: 50px;
   height: 4px;
   margin-bottom: 79px;
   background-color: #79C8C7;
+}
+
+.hero__line--about {
+  background-color: #F67E7E;
 }
 
 .hero__text {
@@ -544,22 +573,42 @@ a {
   .hero {
     background-position: left 20%;
   }
+  .hero--about {
+    background-position: right bottom;
+  }
 }
 @media only screen and (max-width: 1035px) {
   .hero {
     background-size: 0;
   }
+  .hero--about {
+    padding: 39px 0 112px;
+    background-size: 200px 200px;
+    background-position: right -50px bottom;
+  }
   .hero__title__box {
     width: 100%;
     max-width: 410px;
+  }
+  .hero__title--about {
+    width: 100%;
+    max-width: 250px;
   }
   .hero__title {
     font-size: 75px;
     line-height: 75px;
   }
+  .hero__title--about {
+    display: block;
+    margin: 0 auto;
+  }
   .hero__text__box {
     width: 100%;
     max-width: 350px;
+  }
+  .hero__text__box--about {
+    width: 100%;
+    max-width: 650px;
   }
   .hero__text {
     font-size: 16px;
@@ -595,6 +644,9 @@ a {
   }
 }
 @media only screen and (max-width: 576px) {
+  .hero--about {
+    background-position: right -50px bottom -100px;
+  }
   .hero__inner {
     background-size: 100% auto;
   }

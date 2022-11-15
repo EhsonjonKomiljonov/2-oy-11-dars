@@ -37,7 +37,7 @@
   color: #F67E7E;
 }
 
-.nav__btn {
+.site-header__btn {
   display: block;
   border: 2px solid #FFFFFF;
   border-radius: 24px;
@@ -49,7 +49,7 @@
   color: #FFFFFF;
 }
 
-.nav__btn:active{
+.site-header__btn:active{
   background-color: #fff;
   color: #014E56;
   border: 2px solid #014E56;
@@ -66,7 +66,7 @@
 
 @include media (768px){
   .site-header{
-    padding: 72px 0;
+    padding: 64px 0;
   }
 }
 
@@ -76,7 +76,7 @@
     padding: 48px 0;
   }
 
-  .nav, .nav__btn{
+  .nav, .site-header__btn{
     display: none;
   }
 
